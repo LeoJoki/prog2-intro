@@ -1,4 +1,11 @@
 import time
+import sys
+
+def delay_print(s):
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.5)
 
 loop = True
 
@@ -19,7 +26,8 @@ while loop == True:
         time.sleep(1)
         print("DET ÄR VAD JAG GAV DIN MAMMA IGÅR NATT!!!!!!!!")
         time.sleep(2)
-        print("...")
+        delay_print("...")
         time.sleep(1)
+        print("")
         print("Jag har en otroligt sofistikerad humor")
         time.sleep(1)
